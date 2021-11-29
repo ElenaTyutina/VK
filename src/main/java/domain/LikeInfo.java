@@ -1,25 +1,25 @@
 package domain;
 
-public class Like {
-    private User author;
+public class LikeInfo {
+
     private int count;
     private int userLikes;
-    private int canLike;
-    private int canPublish;
+    private boolean canLike;
+    private boolean canPublish;
 
-    public int getCanLike() {
+    public boolean getCanLike() {
         return canLike;
     }
 
-    public int getCanPublish() {
+    public boolean getCanPublish() {
         return canPublish;
     }
 
-    public void setCanPublish(int canPublish) {
+    public void setCanPublish(boolean canPublish) {
         this.canPublish = canPublish;
     }
 
-    public void setCanLike(int canLike) {
+    public void setCanLike(boolean canLike) {
         this.canLike = canLike;
     }
 
@@ -39,11 +39,5 @@ public class Like {
         this.count = count;
     }
 
-    public User getAuthor() {
-        return author;
-    }
 
-    public void setAuthor(User author) {
-        this.author = author;
-    }
 }
